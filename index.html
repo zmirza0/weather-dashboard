@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="left-nav">
+                <aside>
+                    <div class="city-search">
+                        <form id="search-form" class="form">
+                            <h2>Search for a City:</h2>
+                            <div class="search-form mb-3">
+                                <input type="text" class="city-input form-control" placeholder="Houston"
+                                    aria-label="Houston" aria-describedby="button-addon2">
+                                <button class="btn search-btn btn-outline-secondary w-100" type="button"
+                                    id="button-addon2">Search</button><hr>
+                            </div>
+
+                            
+                        </form>
+                    </div>
+                    <div class="city-list">
+                        
+                        <ul class="list-group" id="searchedCity">
+                            <li class="list-group-item border-0"><button class="btn history-btn w-100"
+                                    type="button"></button></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="row">
+                <div class="col-12">
+                    <div class="current-conditions">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h3 class="city-result">City (DD/MM/YYYY)<img class="w-2"
+                                        src="http://openweathermap.org/img/wn/10d@2x.png" /></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <p class="temp">Temp: </p>
+                                <p class="wind">Wind: </p>
+                                <p class="humidity">Humidity: </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>5-Day Forecast: </h3>
+            <div class="row" id="fiveDay">
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">MM/DD/YYYY</h5>
+                            <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" />
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Wind: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">MM/DD/YYYY</h5>
+                            <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" />
+                            <p class="card-text fdf-temp1">Temp: </p>
+                            <p class="card-text fdf-wind1">Wind: </p>
+                            <p class="card-text fdf-humidity1">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">MM/DD/YYYY</h5>
+                            <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" />
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Wind: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">MM/DD/YYYY</h5>
+                            <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" />
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Wind: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">MM/DD/YYYY</h5>
+                            <img class="w-50" src="http://openweathermap.org/img/wn/10d@2x.png" />
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Wind: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script type='text/javascript' src='config.js'></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
