@@ -17,7 +17,7 @@
    N/A
    ## Usage
    Type in the desired city, and you must click on the search button, not just enter.
-   Link: 
+   Link: https://zmirza0.github.io/weather-dashboard/
    ## Credits/Contribution
    Made by Zarrar Raja, no contribution needed.
    ## License
